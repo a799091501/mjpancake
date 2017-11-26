@@ -33,6 +33,7 @@ public:
     static PClient &instance();
 
     Q_INVOKABLE void login(const QString &username, const QString &password);
+    Q_INVOKABLE void logout();
     Q_INVOKABLE void lookAround();
     Q_INVOKABLE void book(int bookType);
     Q_INVOKABLE void unbook();

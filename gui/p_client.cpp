@@ -57,6 +57,12 @@ void PClient::login(const QString &username, const QString &password)
     });
 }
 
+void PClient::logout()
+{
+    // pretend closed, still connecting
+    onRemoteClosed();
+}
+
 void PClient::lookAround()
 {
     QJsonObject req;
